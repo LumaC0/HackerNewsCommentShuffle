@@ -2,9 +2,11 @@
 	"manifest_version": 3,
 	"name": "hackerNewsCommentShuffle",
 	"description": "Shake up the comment tree",
-	"version": "0.0.1",
+	"version": "0.1.1",
 	"icons": {
-		"64": "icons/icon.png"
+		"48": "icons/hncs-48.png",
+		"64": "icons/hncs-64.png",
+		"96": "icons/hncs-96.png"
 	},
 
 	"browser_specific_settings": {
@@ -16,7 +18,9 @@
 
 	"action": {
 		"default_icon": {
-			"64": "icons/icon.png"
+			"48": "icons/hncs-48.png",
+			"64": "icons/hncs-64.png",
+			"96": "icons/hncs-96.png"
 		},
 		"default_title": "hackerNewsCommentShuffle"
 	},
