@@ -1,12 +1,3 @@
-/*
-  Currently able to replace the comment tree with an arbitrary html element.
-
-  TODO: Shuffle comment groups and cast to an HTMLCollection for html
-  replacement
-
-  TODO: follow the DOM backward to replace ad-hoc element with original html
-*/
-
 let toHTMLTable = (/* array of comment groups */ commentGroups) => {
   const tableBody = document.createElement("tbody");
 
@@ -79,7 +70,6 @@ browser.runtime.onMessage.addListener((message) => {
     if (message.command) {
       console.log("shuffle comments");
       shuffleCommentTree();
-
     } else {
       console.log("unshuffle comments");
       unshuffleCommentTree();
