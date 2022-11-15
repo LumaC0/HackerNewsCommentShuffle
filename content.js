@@ -1,6 +1,5 @@
 let toHTMLTable = (/* array of comment groups */ commentGroups) => {
   const tableBody = document.createElement("tbody");
-
   for (i of commentGroups.flat()) tableBody.appendChild(i);
 
   return tableBody;
@@ -19,7 +18,6 @@ let shuffleTree = (/* array of comments */ comments) => {
 
 let commentTreePath = (/* true for DOM parent node */ parent) => {
   const commentTree = document.getElementsByClassName("comment-tree")[0];
-
   return parent === true
     ? commentTree /* table */
     : commentTree.childNodes[1]; /* tbody */
@@ -44,7 +42,6 @@ let groupComments = (comments) => {
 
 const defaultCommentArray = (() => {
   commentNodes = commentTreePath((parent = false));
-
   // HTMLCollection of <tr> comments
   return commentNodes ? Array.from(commentNodes.children) : null;
 })();
@@ -52,14 +49,12 @@ const defaultCommentArray = (() => {
 let shuffleCommentTree = () => {
   const newTree = shuffleTree(defaultCommentArray); /* tbody element */
   const table = commentTreePath((parent = true));
-
   table.replaceChild(newTree, commentTreePath((parent = false)));
 };
 
-let unshuffleCommentTree = async () => {
+let unshuffleCommentTree = () => {
   const defaultTree = toHTMLTable(defaultCommentArray);
   const table = commentTreePath((container = true));
-
   table.replaceChild(defaultTree, commentTreePath((container = false)));
 };
 
