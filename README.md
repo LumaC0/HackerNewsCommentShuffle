@@ -1,10 +1,10 @@
 # HackerNewsCommentShuffle
 
-![icon](icons/hncs2-original.png)
+![icon](icons/hncs-shapes.png)
 
 <sup>Image created with [Hundred Rabits Dotgrid](https://100r.co/site/dotgrid.html)</sup>
 
-An Egalitarian comment tree for those of us with a less polished hand. This browser extension will soon be available on [addons.mozilla.org](addons.mozilla.org). In the mean time, I'll incorporate the [Webextension-polyfill](https://github.com/mozilla/webextension-polyfill) for cross-browser capability. I also have plans to write tests and to transcribe this to typescript.
+An Egalitarian comment structure for the revolting and less polished. Actually It's not THAT serious. Negativity always seems to find its way to the top, giving yet another example of [Gresham's Law](https://en.wikipedia.org/wiki/Gresham%27s_law) in a sociocultural context.
 
 ### Note:
-This extension is not yet published on [addons.mozilla.org](addons.mozilla.org) because manifest v3 is not  accepted as of Q4 2022.
+I intended on using manifest v3 but was denied sumbission to the Firefox add-ons repository. I can't seem to find any updated information on the support timeline.
