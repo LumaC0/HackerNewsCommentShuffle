@@ -18,3 +18,4 @@ are shuffled together. Click it again or refresh the page to set the original
 order. The extension gives no indication that the comments are out of original
 order. 
 
+### [Installation Link](https://addons.mozilla.org/en-US/firefox/addon/hackernewscommentshuffle/)
